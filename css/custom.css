@@ -1,0 +1,41 @@
+
+
+.header {
+    padding: 30px;
+}
+
+.header nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 20px;
+}
+
+.header .menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.header .menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 0px;
+    transition: all ease-in-out 0.1s;
+}
+
+.header .menu ul li a:hover {
+    color: var(--main-color);
+    border-top:2px solid var(--main-color);    
+}
+
+
+.active {
+    color: var(--main-color) !important;
+    border-top:2px solid var(--main-color);
+}
