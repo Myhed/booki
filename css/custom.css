@@ -1,9 +1,33 @@
 
-
+/* Base header style */
 .header {
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
+/* text between search bar */
+.header h1 {
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: normal;
+    font-weight: 700;
+    align-self: stretch;
+}
+
+.header h1 .text {
+  font-size: 19px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+/* end text between search bar */
+
+/* nav menu with image style */
 .header nav {
     align-items: center;
     display: flex;
@@ -17,7 +41,6 @@
 
 .header .menu ul {
     display: flex;
-    justify-content: space-around;
     list-style-type: none;
     gap: 30px;
 }
@@ -38,4 +61,111 @@
 .active {
     color: var(--main-color) !important;
     border-top:2px solid var(--main-color);
+}
+
+/* end nav menu with image style */
+
+#search-logement {
+    display: flex;
+    flex-direction: row;
+}
+
+#search-logement .icon-localisation {
+    width: 50px;
+    height: 49px;
+    background: var(--main-bg-color);
+    font-family: "FontAwesome";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#search-logement .icon-localisation::before {
+    /* content: "\f002" */
+    content: "\f041";
+}
+
+#search-logement input {
+    height: 49px;
+    border:none;
+    width: 337px;
+    font-size: 18px;
+    border: 1px solid var(--main-bg-color);
+}
+
+#search-logement .form-group {
+    display: flex;
+    flex-direction: row;
+}
+
+#search-logement input:focus {
+    outline: none;
+}
+
+#search-logement input[type="submit"]{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    background: var(--main-color);
+    font-weight: 700;
+    width: 132px;
+    color:white;
+}
+
+#search-logement input::placeholder {
+    text-align: center;
+    color:black;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#search-logement input[type="text"] {
+    padding: 10px;
+}
+
+#search-logement input::target-text {
+    color:none;
+}
+
+#filtre-logements {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.filtre-case {
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 19px;
+    padding-right:19px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filtre-case p {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.filtre-case:hover {
+    background: var(--blue-light, #DEEBFF);
+}
+
+#info-logement {
+    display: flex;
+    gap: 10px;
+}
+
+.circle-info {
+    align-self: center;
+}
+
+#info-logement p {
+    align-self: center;
 }
