@@ -1,8 +1,16 @@
+* {
+    margin: 0px;
+    padding:0px;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
 /* Base header style */
 .header {
     padding-top: 30px;
-    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -29,7 +37,6 @@
 
 /* nav menu with image style */
 .header nav {
-    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,10 +46,18 @@
     height: 20px;
 }
 
+.header .menu .logo {
+    align-self: center;
+}
+
+.header .menu {
+    height: 79px;
+}
+
 .header .menu ul {
     display: flex;
     list-style-type: none;
-    gap: 30px;
+    gap: 68px;
 }
 
 .header .menu ul li a {
@@ -71,8 +86,7 @@
 }
 
 #search-logement .icon-localisation {
-    width: 50px;
-    height: 49px;
+    padding:15px 20px 15px;
     background: var(--main-bg-color);
     font-family: "FontAwesome";
     display: flex;
@@ -89,10 +103,18 @@
 
 #search-logement input {
     height: 49px;
+    width: 100%;
     border:none;
-    width: 337px;
     font-size: 18px;
     border: 1px solid var(--main-bg-color);
+}
+
+#search-logement form {
+    width:80%;
+}
+
+#search-logement form input {
+    width: 30%;
 }
 
 #search-logement .form-group {
@@ -110,8 +132,8 @@
     cursor: pointer;
     background: var(--main-color);
     font-weight: 700;
-    width: 132px;
     color:white;
+    width:132px;
 }
 
 #search-logement input::placeholder {
@@ -136,6 +158,16 @@
     gap: 15px;
 }
 
+#filtre-logements h3 {
+    align-self: center;
+}
+
+.filtres-cases {
+    display: flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
 .filtre-case {
     border: 2px solid var(--grey-tint-2, #D9D9D9);
     border-radius: 25px;
@@ -144,6 +176,8 @@
     gap: 10px;
     padding-left: 19px;
     padding-right:19px;
+    padding-top:14px;
+    padding-bottom: 14px;
     align-items: center;
     cursor: pointer;
 }
@@ -168,4 +202,145 @@
 
 #info-logement p {
     align-self: center;
+}
+
+
+.card-hebergement {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 5px solid var(--white, #FFF);
+    width: 30%;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+.card-hebergement .description {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.description h3,p{
+    margin:0px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#cards-hebergements {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.more {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color:black;
+}
+
+.card-hebergement img {
+  height: 124px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+
+.star-hebergement {
+    font-family: "FontAwesome";
+}
+
+.star-hebergement::before {
+    content: "\f005";
+}
+
+.star-filled {
+    color: var(--main-color);
+}
+
+.star-empty {
+
+    color: var(--main-bg-color);
+}
+
+.stars {
+    display: flex;
+}
+
+#activities {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap:30px;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+
+.cities > .card img {
+
+    height: 380px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cities .card {
+    padding:0px;
+}
+
+.cities > .card h3 {
+    padding: 20px;
+}
+
+footer {
+    background: var(--main-bg-color);
+}
+
+footer #footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#footer-menu li {
+     list-style-type: none;
+}
+
+#footer-menu > li {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    width: 30%;
+}
+
+#footer-menu li a {
+    text-decoration: none;
+    color:black;
+}
+
+.footer-sub-menu {
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-sub-menu {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+#footer-menu h3 {
+    padding: 0px;
+    margin: 0px;
 }
