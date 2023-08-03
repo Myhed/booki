@@ -8,6 +8,7 @@ main {
     flex-direction: column;
     gap:35px;
 }
+
 /* Base header style */
 .header {
     padding-top: 30px;
@@ -235,7 +236,8 @@ main {
 #cards-hebergements {
     display: flex;
     flex-direction: row;
-    gap:30px;
+    row-gap:30px;
+    column-gap:15px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -343,4 +345,34 @@ footer #footer-menu {
 #footer-menu h3 {
     padding: 0px;
     margin: 0px;
+}
+
+@media (max-width: 1024px){
+
+    .main-container {
+        max-width: 1024px;
+    }
+
+    
+    #filtre-logements {
+        flex-direction: column;
+    }
+
+    .cities > .card img {
+
+        height: 200px;
+    }
+
+    #search-logement form input {
+        width: 40%;
+    }
+
+    #filtre-logements h3 {
+        align-self: normal;
+    }
+}
+
+@media (max-width: 890px) {
+
+    
 }
