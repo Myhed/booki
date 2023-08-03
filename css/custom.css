@@ -18,7 +18,7 @@ main {
 }
 
 /* text between search bar */
-.header h1 {
+#logement h1 {
     font-size: 26px;
     display: flex;
     flex-direction: column;
@@ -28,10 +28,16 @@ main {
     align-self: stretch;
 }
 
-.header h1 .text {
-  font-size: 19px;
+#logement h1 .text {
+  font-size: 16px;
   line-height: normal;
   font-weight: 400;
+}
+
+#logement {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
 }
 
 /* end text between search bar */
@@ -58,7 +64,12 @@ main {
 .header .menu ul {
     display: flex;
     list-style-type: none;
-    gap: 68px;
+    gap:68px;
+}
+
+.header .menu ul li {
+    width: 100%;
+    text-align: center;
 }
 
 .header .menu ul li a {
@@ -66,6 +77,8 @@ main {
     text-decoration: none;
     padding: 8px 0px;
     transition: all ease-in-out 0.1s;
+    width: 100%;
+    display: block;
 }
 
 .header .menu ul li a:hover {
@@ -127,14 +140,23 @@ main {
     outline: none;
 }
 
-#search-logement input[type="submit"]{
+#search-logement .search{
+    border:none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
+    font-family: "Raleway","FontAwesome", sans-serif;
     background: var(--main-color);
     font-weight: 700;
     color:white;
     width:132px;
+}
+
+
+#search-logement .search::after {
+    content: "Rechercher";
+    font-weight: 700;
+    font-size: 18px;
 }
 
 #search-logement input::placeholder {
@@ -363,16 +385,125 @@ footer #footer-menu {
         height: 200px;
     }
 
-    #search-logement form input {
-        width: 40%;
-    }
-
     #filtre-logements h3 {
         align-self: normal;
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 376px){
 
+    footer #footer-menu {
+        flex-direction: column;
+        gap:35px;
+    }
+
+    footer #footer-menu li {
+        width: 100%;
+    }
+
+    footer #footer-menu li h3 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding-bottom: 35px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    #activities .cities {
+        flex-direction: column;
+    }
+
+    #cards-hebergements {
+        flex-direction: column;
+    }
+
+    #cards-hebergements .card-hebergement {
+        width: 100%;
+    }
     
+    .populaires-cards .card {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: #FFF;
+    }
+
+    .hebergements-and-populaires section {
+       border-radius: 0px;
+    }
+    
+    footer,#logement {
+        padding: 35px 20px 0px 20px;
+    }
+
+    #logement h1 {
+        font-size: 22px;
+    }
+    
+    .main-container {
+        max-width: 375px;
+        padding: 0px 0px;
+        row-gap: 0px;
+    }
+
+    .header .menu {
+        flex-direction: column;
+    }
+
+    .active {
+        color: var(--main-color) !important;
+        border-top:none;
+        border-bottom:2px solid var(--main-color);
+    }
+
+    .active:hover {
+        color: var(--main-color) !important;
+        border-bottom:2px solid var(--main-color);
+    }
+
+    .header .menu ul {
+        justify-content: center;
+        width: 100%;
+        padding: 0px 0px;
+        gap:0px;
+      }
+
+      .header .menu ul li a {
+        border-bottom: 2px solid #ccc;
+      }
+      
+      .filtre-case p {
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+     .header .menu ul li a:hover {
+        color: var(--main-color);
+        border-top:none;
+        border-bottom:2px solid var(--main-color);    
+    }
+
+    #search-logement form .search {
+        border-radius: 15px;
+        width: 20%;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    #search-logement form input {
+        width: 100%;
+    }
+    
+    #search-logement .search::after {
+       content: "\f002";
+       width: auto;
+    }
 }

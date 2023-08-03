@@ -27,20 +27,23 @@
                     <li><a href="#">Activités</a></li>
                 </ul>
             </nav>
-            <h1>
+        </header>
+        <section id="logement"> 
+         <h1>
                 Trouvez votre hébergement pour des vacances de rêve
                 <span class="text">En plein centre-ville ou en pleine nature</span>
-            </h1>
-            <div id="search-logement">
+         </h1>
+         <div id="search-logement">
              <div class="icon-localisation"></div>
              <form action="#">
                 <div class="form-group">
                  <input type="text" placeholder="Marseille, France" name="search">
-                 <input type="submit" value="Rechercher" name="rechercher">
+                 <!-- <input type="submit" value="Rechercher" name="rechercher"> -->
+                 <button class="search"></button>
                 </div>
              </form>
-            </div>
-            <div id="filtre-logements">
+         </div>
+         <div id="filtre-logements">
                 <h3>Filtres</h3>
                 <div class="filtres-cases">
                     <div class="filtre-case">
@@ -68,17 +71,17 @@
                         <p>Nos pépites</p>
                     </div>
                 </div>
-                </div>
-            <div id="info-logement">
-                <span class="circle-info">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <circle cx="12" cy="12" r="11.5" stroke="#D9D9D9"/>
-                     <path d="M13.3333 15.6829H12.6667V11.0074C12.6667 10.6381 12.3681 10.3395 12 10.3395H10.6667C10.2985 10.3395 10 10.6381 10 11.0074C10 11.3766 10.2985 11.6565 10.6667 11.6565H11.3333V15.6641H10.6667C10.2985 15.6641 10 15.9628 10 16.3321C10 16.7013 10.2985 17 10.6667 17H13.3333C13.7015 17 14 16.7013 14 16.3321C14 15.9628 13.7021 15.6829 13.3333 15.6829ZM12 9.00359C12.5523 9.00359 13 8.55503 13 8.00169C13 7.44835 12.5521 7 12 7C11.4479 7 11 7.44856 11 8.0019C11 8.55524 11.4477 9.00359 12 9.00359Z" fill="#0065FC"/>
-                    </svg> 
-                </span>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-        </header>
+         </div>
+         <div id="info-logement">
+          <span class="circle-info">
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="11.5" stroke="#D9D9D9"/>
+                  <path d="M13.3333 15.6829H12.6667V11.0074C12.6667 10.6381 12.3681 10.3395 12 10.3395H10.6667C10.2985 10.3395 10 10.6381 10 11.0074C10 11.3766 10.2985 11.6565 10.6667 11.6565H11.3333V15.6641H10.6667C10.2985 15.6641 10 15.9628 10 16.3321C10 16.7013 10.2985 17 10.6667 17H13.3333C13.7015 17 14 16.7013 14 16.3321C14 15.9628 13.7021 15.6829 13.3333 15.6829ZM12 9.00359C12.5523 9.00359 13 8.55503 13 8.00169C13 7.44835 12.5521 7 12 7C11.4479 7 11 7.44856 11 8.0019C11 8.55524 11.4477 9.00359 12 9.00359Z" fill="#0065FC"/>
+                 </svg> 
+          </span>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        </section>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -87,85 +90,108 @@
                         <div class="card-hebergement">
                             <img src="./images/hebergements/fred-kleber.jpg" alt="Hotel du port">
                             <div class="description">
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de 52€</p>
-                                <div class="stars">
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-empty"></span>
-
+                                <div class="card-text">
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52€</p>
+                                </div>
+                                <div class="card-rating">
+                                      <div class="stars">
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-empty"></span>
+                                      </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-hebergement">
                             <img src="./images/hebergements/febrian-zakaria.jpg" alt="Hotel Chew Amina">
                             <div class="description">
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de 52€</p>
-                                <div class="stars">
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-empty"></span>
-                                </div>
+                              <div class="card-text">
+                                  <h3>Hôtel du port</h3>
+                                  <p>Nuit à partir de 52€</p>
+                              </div>
+                              <div class="card-rating">
+                                    <div class="stars">
+                                      <span class="star-hebergement star-filled"></span>
+                                      <span class="star-hebergement star-filled"></span>
+                                      <span class="star-hebergement star-filled"></span>
+                                      <span class="star-hebergement star-filled"></span>
+                                      <span class="star-hebergement star-empty"></span>
+                                    </div>
+                              </div>
                             </div>
                         </div>
                         <div class="card-hebergement">
                             <img src="./images/hebergements/reisetopia.jpg" alt="Hotel Les mouettes">
                             <div class="description">
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de 52€</p>
-                                <div class="stars">
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-empty"></span>
+                                <div class="card-text">
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52€</p>
+                                </div>
+                                <div class="card-rating">
+                                      <div class="stars">
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-empty"></span>
+                                      </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-hebergement">
                             <img src="./images/hebergements/annie-spratt.jpg" alt="Hotel de la mer">
                             <div class="description">
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de 52€</p>
-                                <div class="stars">
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-empty"></span>
+                                <div class="card-text">
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52€</p>
+                                </div>
+                                <div class="card-rating">
+                                      <div class="stars">
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-empty"></span>
+                                      </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-hebergement">
                             <img src="./images/hebergements/marcus-loke.jpg" alt="Auberge de la cannebiere">
                             <div class="description">
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de 52€</p>
-                                <div class="stars">
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-empty"></span>
+                                <div class="card-text">
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52€</p>
+                                </div>
+                                <div class="card-rating">
+                                      <div class="stars">
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-empty"></span>
+                                      </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-hebergement">
                             <img src="./images/hebergements/nicate-lee.jpg" alt="Aubberge Le Panier">
                             <div class="description">
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de 52€</p>
-                                <div class="stars">
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-filled"></span>
-                                 <span class="star-hebergement star-empty"></span>
+                                <div class="card-text">
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52€</p>
+                                </div>
+                                <div class="card-rating">
+                                      <div class="stars">
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-filled"></span>
+                                        <span class="star-hebergement star-empty"></span>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -233,25 +259,25 @@
                 </section>
             </div>
             <div id="activities">
-                <h2>Activités à Marseille</h2>
-                <div class="cities">
-                    <div class="card">
-                      <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
-                       <h3 class="card-title">Vieux Port</h3>
-                    </div>
-                    <div class="card">
-                      <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
-                      <h3 class="card-title">Vieux Port</h3>
-                    </div>
-                    <div class="card">
-                     <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
-                      <h3 class="card-title">Vieux Port</h3>
-                    </div>
-                    <div class="card">
-                     <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
-                     <h3 class="card-title">Vieux Port</h3>
-                    </div>
-                </div> 
+                    <h2>Activités à Marseille</h2>
+                    <div class="cities">
+                        <div class="card">
+                          <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
+                           <h3 class="card-title">Vieux Port</h3>
+                        </div>
+                        <div class="card">
+                          <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
+                          <h3 class="card-title">Vieux Port</h3>
+                        </div>
+                        <div class="card">
+                         <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
+                          <h3 class="card-title">Vieux Port</h3>
+                        </div>
+                        <div class="card">
+                         <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
+                         <h3 class="card-title">Vieux Port</h3>
+                        </div>
+                    </div> 
             </div>
         </main>
         <footer>
