@@ -166,5 +166,111 @@ body {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    #logement h1 {
+        font-size: 22px!important;
+    }
+
+  .filtre-case p {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .description {
+        justify-content: space-around;
+    }
+
+    .populaires-cards .card-content {
+        justify-content: space-around;
+    }
+
+    #cards-hebergements .card-hebergement {
+        flex-direction: row;
+        padding:0px;
+    }
+
+    #cards-hebergements .card-hebergement img {
+        align-items: center;
+        width: 33%;
+        height: 136px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+         border-top-left-radius: 20px;
+        object-fit: cover;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 16px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 14px;
+    }
+
+    #cards-hebergements .card-hebergement h3 {
+        font-size: 16px;
+    }    
+
+    #cards-hebergements .card-hebergement p {
+        font-size: 14px;
+    }
+
+    #search-logement form .search {
+        border-radius: 15px;
+        width: 20%;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    #search-logement form input {
+        width: 100%;
+    }
+
+    .filtres-cases {
+        flex-direction: column;
+        gap: 15px;
+      }
+    
+    #search-logement form .search::after {
+       content: "\f002";
+    }
+
+    #search-logement form input {
+        width: 100%!important;
+    }
+
+    footer #footer-menu {
+        gap:35px;
+    }
+
+    footer #footer-menu li {
+        width: 100%;
+    }
+
+    footer #footer-menu li h3 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding-bottom: 35px;
+    }
+
+    #activities .cities {
+        flex-direction: column;
+    }
+
+    #cards-hebergements {
+        flex-direction: column;
+    }
+
+    #cards-hebergements .card-hebergement {
+        width: 100%;
+    }
+    
+    .populaires-cards .card {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    } 
+
 }

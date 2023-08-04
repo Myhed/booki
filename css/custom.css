@@ -172,9 +172,8 @@ main {
 }
 
 #search-logement input::target-text {
-    color:none;
+    color:transparent;
 }
-
 #filtre-logements {
     display: flex;
     flex-direction: row;
@@ -391,11 +390,36 @@ footer #footer-menu {
 }
 
 @media (max-width: 376px){
+    .filtres-cases {
+        flex-direction: row;
+        gap: 15px;
+    }
 
+    #cards-hebergements .card-hebergement {
+        flex-direction: column;
+        padding:0px;
+    }
+
+    #cards-hebergements .card-hebergement img {
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+         border-top-left-radius: 20px;
+        object-fit: cover;
+    }
+
+    .populaires-cards .card-content {
+        justify-content: space-between;
+    }
     footer #footer-menu {
         flex-direction: column;
         gap:35px;
     }
+
+    #logement h1 {
+        font-size: 22px;
+    }
+
 
     footer #footer-menu li {
         width: 100%;
@@ -443,10 +467,6 @@ footer #footer-menu {
     
     footer,#logement {
         padding: 35px 20px 0px 20px;
-    }
-
-    #logement h1 {
-        font-size: 22px;
     }
     
     .main-container {
@@ -502,8 +522,14 @@ footer #footer-menu {
         width: 100%;
     }
     
-    #search-logement .search::after {
+    #search-logement form .search::after {
        content: "\f002";
-       width: auto;
     }
+}
+
+@media (max-width: 365px){
+    .filtres-cases {
+        flex-direction: column;
+        gap: 15px;
+      }
 }
