@@ -11,7 +11,7 @@ main {
 
 /* Base header style */
 .header {
-    padding-top: 30px;
+    padding-top: 2px;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -396,7 +396,7 @@ footer #footer-menu {
     }
 }
 
-@media (max-width: 376px){
+@media (max-width: 768px){
     .filtres-cases {
         flex-direction: row;
         gap: 15px;
@@ -481,7 +481,7 @@ footer #footer-menu {
     }
     
     .main-container {
-        max-width: 375px;
+        /* max-width: 768px; */
         padding: 0px 0px;
         row-gap: 0px;
     }
