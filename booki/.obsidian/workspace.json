@@ -78,16 +78,26 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a15f37754c103172",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
-        "id": "e8cb8f52ade55a24",
+        "id": "02160b33ab7af4f2",
         "type": "tabs",
         "children": [
           {
-            "id": "787bda906cf1bbee",
+            "id": "bbdff817680936c7",
             "type": "leaf",
             "state": {
               "type": "reveal-preview-view",
@@ -137,6 +147,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "ea1fa8f579a08fa6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -213,16 +231,16 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:Créer une nouvelle toile": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
-      "canvas:Create new canvas": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "35fccd67efaab5a3",
+  "active": "a15f37754c103172",
   "lastOpenFiles": [
     "Restriction et compatibilité.md",
     "slide.md",
