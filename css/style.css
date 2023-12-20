@@ -21,6 +21,11 @@ body {
     justify-content: center;
 }
 
+.card-hebergement {
+    text-decoration: none;
+    color:black;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
